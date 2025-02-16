@@ -1,0 +1,44 @@
+{
+    "name": "msaaq/snapchat-sdk-php",
+    "description": "PHP Business SDK for Snap Conversion API)",
+    "keywords": [
+        "snap",
+        "snapchat",
+        "ads",
+        "ad-attribution",
+        "capi",
+        "conversionapi",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api"
+    ],
+    "homepage": "https://marketingapi.snapchat.com/docs/conversion.html#conversions-api",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Ad-attribution team",
+            "homepage": "https://marketingapi.snapchat.com/docs/conversion.html#conversions-api"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0",
+        "monolog/monolog": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": { "SnapBusinessSDK\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "SnapBusinessSDK\\Test\\" : "test/" }
+    }
+}
